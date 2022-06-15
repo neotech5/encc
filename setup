@@ -1,4 +1,2 @@
 #!/bin/bash
-sudo add-apt-repository ppa:neurobin/ppa
-wget -O /usr/bin/shco https://raw.githubusercontent.com/neotech5/encryptshell/main/setup ; chmod +x /usr/bin/shco ; mkdir /root/enkrip
-clear
+apt-get install build-essential -y ; wget -c https://github.com/neurobin/shc/archive/4.0.2.tar.gz ; tar xzvf 4.0.2.tar.gz ; cd shc-4.0.2/ ; ./configure ; make ; make install ; wget -O /usr/bin/shco https://raw.githubusercontent.com/senowahyu62/SHCO/main/shco ; chmod +x /usr/bin/shco ; mkdir /root/enkrip
